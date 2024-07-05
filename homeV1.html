@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home V1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: whitesmoke;
+        }
+
+        .navbar {
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            border: 1px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 300px;
+        }
+
+        .nav {
+            margin-left: auto; 
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav ul li {
+            position: relative;
+            margin-left: 5px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+            display: flex;
+            align-items: center; 
+            position: relative;
+            line-height: 40px;
+        }
+
+        .nav ul li a:hover {
+            color: orangered;
+        }
+
+        .nav ul li a .fa-solid {
+            width: 20px;
+            height: 20px;
+            color: white;
+            margin-left: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 1s;
+            position: relative;
+        }
+
+        .nav ul li .fa-solid::before {
+            content: "+";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .nav ul li .sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            padding: 5px 0;
+            width: auto; 
+        }
+
+        .nav ul li:hover .sub-menu {
+            display: block;
+        }
+
+        .sub-menu li {
+            padding: 0px 0;
+            align-items: center;
+        }
+
+        ul .sub-menu li a {
+            text-decoration: none;
+            color: rgb(17, 17, 17);
+            font-size: 18px;
+        }
+
+        .nav button {
+            margin-left: 10px;
+            padding: 15px 40px;
+            color: white;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: orangered;
+            border: none;
+            border-radius: 25px;
+        }
+
+        .nav button:hover {
+            background-color: black;
+        }
+
+        .nav ul li:hover .fa-solid::before {
+            content: "-";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .welcome {
+            background-color: #007bff;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px; /* Adjust as needed */
+            position: relative;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+        }
+
+        .welcome h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .welcome h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .welcome p {
+            font-size: 18px;
+        }
+
+        .welcome button {
+            background-color: orangered;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 25px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .welcome button:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo1.svg" height="100px" width="220px">
+            </div>
+            <div class="nav">
+                <ul class="links">
+                    <li>
+                        <a href="homeV1.html">Home <i class="fa-solid fa-plus"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">HomeV1 (preschool)</a></li>
+                            <li><a href="#">HomeV2 (activities)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li>
+                        <a href="#">Pages <i class="fa-solid fa-plus"></i></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <div class="page">
+                                    <div class="page1">
+                                        <h3>Pages</h3>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Teacher</a></li>
+                                        <li><a href="#">Teacher Details</a></li>
+                                        <li><a href="#">Service</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Blog Details</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">FAQ's</a></li>
+                                    </div>
+                                    <div class="page2">
+                                        <h3>Utility Pages</h3>
+                                        <li><a href="#">Style Guide</a></li>
+                                        <li><a href="#">Password Protected</a></li>
+                                        <li><a href="#">404 Not found</a></li>
+                                        <li><a href="#">Licence</a></li>
+                                        <li><a href="#">ChangeLog</a></li>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Cart(0)</

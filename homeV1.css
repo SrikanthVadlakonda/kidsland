@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif; }
+.conatiner{
+    width:100%;
+    height: 100vh;
+    border: black solid;
+    
+    background-color: whitesmoke;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    line-height: 45px;
+    background-color:  aqua;
+    border: 1px solid;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.nav ul{
+    display:flex ;
+    list-style: none;
+    margin-left: 10px;
+    }
+
+    .nav ul li a{
+        margin-left: 30px;
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+       
+    }
+    .nav ul li i{
+        width: 20px;
+       background-color: red;
+       color: white;
+       transition: all 0.4s ease;
+    }
+    .nav ul li:hover .home-plus,
+    .nav ul li:hover .pages-plus{
+        transform: rotate(180deg);
+    }
+    .nav button{
+        margin-left: 30px;
+        padding: 15px 40px;
+        color:white;
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: orangered;
+        border: none;
+        border-radius: 25px;
+        align-items: center;
+    }
+    .nav button:hover{
+        background-color: black;
+        
+    }
