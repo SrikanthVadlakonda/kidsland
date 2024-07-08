@@ -470,7 +470,7 @@ margin-top: 150px;
 .fa-solid{
     height: 50px;
     width: 50px;
-    color: rgb(235, 139, 14);
+    color:green;
     margin-left: 20px;
 }
 .activity2{
@@ -562,7 +562,7 @@ padding: 15px 10px;
     height:450px ;
     width: 400px;
     border-radius: 20px;
-    background-color: rgb(217, 243, 243);
+    background-color: rgb(233, 235, 217);
 
 
 }

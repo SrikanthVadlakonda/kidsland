@@ -1,0 +1,557 @@
+.container {
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    overflow: hidden; 
+    position: relative; 
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    z-index: 2; /* Ensure navbar is above curved background */
+}
+
+.curved-background {
+    position: absolute;
+    top: -50px; /* Adjust to position the curve */
+    left: 0;
+    width: 100%;
+    height: 200px; /* Adjust height of curved background */
+    background-color: #007bff; /* Background color */
+    clip-path: ellipse(100% 50% at 50% 0%); /* Create an ellipse shape */
+    z-index: 1; /* Behind the navbar */
+}
+
+.logo {
+    width: 200px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    line-height: 40px;
+    position: relative;
+    margin-left: 5px; /* Adjust spacing between menu items */
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 15px; /* Adjust padding to create clickable area */
+}
+
+.nav ul li a:hover {
+    color: orangered;
+}
+
+.nav ul li a .fas {
+    margin-left: 5px; /* Adjust spacing between text and icon */
+    transition: transform 0.3s ease; /* Smooth transition for icon rotation */
+}
+
+.nav ul li:hover > a .fas.fa-plus {
+    transform: rotate(45deg); /* Rotate plus icon to create minus effect */
+}
+
+.nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 5px 0;
+    width: auto;
+    min-width: 200px; /* Adjust minimum width of sub-menu */
+}
+
+.nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    padding: 5px 5px; /* Adjust padding inside sub-menu items */
+}
+
+ul .sub-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.sub-menu li a:hover {
+    color: orangered;
+}
+.nav button {
+margin-right: 10px;
+padding: 10px 20px;
+color: white;
+font-size: 18px;
+background-color: orangered;
+border: none;
+border-radius: 25px;
+}
+
+.nav button:hover {
+background-color: black;
+}
+.page{
+display: flex;
+text-align: left;
+column-gap: 50px;
+width: 500px;
+}
+.page h3{
+padding-left: 30px;
+}
+
+.About{
+    text-align: center;
+     margin-top: 80px;
+}
+.About h1{
+    margin-top: 80px;
+    font-size:45px;
+    font-weight:600;
+}
+.About a{
+    text-decoration: none;
+    color: blue;
+}
+.About a:hover{
+    color: orange;
+}
+.home{
+
+   list-style:none;
+   margin-left:-100px;
+   font-size:20px;
+}
+.aboutus{
+    text-decoration:none;
+    list-style:none;
+    margin-left:90px;
+    margin-top:-23px;
+    font-size:20px;
+}
+.about a{
+    text-decoration:none;
+}
+
+.image{
+    margin-top:40px;
+    margin-left:50px;
+    border-color: red;
+    width:480px;
+    height:460px ;
+    border-radius:45px;
+    border-left: -50px; 
+    display: flex;
+}
+.image img{
+    border-radius: 45px;
+    margin-left: 60px; 
+}
+.cont{
+    margin-left: 650px;
+    margin-top:-450px;
+}
+.cont h1{
+    background-color: rgb(238, 201, 207);
+    font-size:40px;
+    width:240px;
+    text-align: center;
+    border-radius:15px;
+}
+.cont h2{
+    font-size:40px;
+    margin-top:-7px;
+    background-color: rgb(216, 214, 214);
+    width:380px;
+    text-align: center;
+    border-radius:15px;
+}
+.cont h4{
+font-size:25px;
+}
+.cont img{
+border-radius:50%;
+margin-top:-30px;
+}
+.cont video{
+margin-left:400px;
+margin-top: -600px;
+}
+
+
+.discover{
+    height: 1100px;
+    margin-top: 300px;
+    width: 100%;
+    background-color: rgb(219, 250, 219);
+    
+    
+    }
+    .discover1{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    
+    }
+    
+    .discover1 h1{
+    font-size: 50px;
+    }
+    .discover1 p{
+    font-size: 20px;
+    }
+    
+    .discover2{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    justify-content: center;
+    
+    }
+    .discover2 .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+    height: 350px;
+    width: 290px;
+    text-align: center;
+    align-content: center;
+    border-radius: 30px;
+    border: solid black;
+    }
+    .box1{
+    background-color: rgb(163, 92, 92);
+    }
+    .box2{
+    background-color:rgb(87, 87, 153);
+    }
+    
+    .box3{
+    background-color:rgb(67, 117, 67);
+    }
+    
+    .box4{
+    background-color:rgb(124, 123, 123);
+    }
+    
+    .box5{
+    background-color:rgb(124, 123, 123);
+    }
+    
+    .box6{
+    background-color:rgb(67, 117, 67);
+    }
+    
+    .box7{
+    background-color:rgb(87, 87, 153);
+    }
+    
+    .box8{
+    background-color:rgb(163, 92, 92);
+    }
+    .discover2 button{
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+    
+    }
+    .wave{
+        height: 250px;
+        width: 100%;
+        background-image: url(images/curvedwave3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .wave2{
+        padding-top: 100px;
+        display: flex;
+        column-gap: 200px;
+        margin-left: 150px;
+        text-align: center;
+        }
+
+
+.teacher{
+    height: 1200px;
+    width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top:300px;
+}
+.teacher h3{
+    font-size: 40px;
+    padding-top: 70px;
+}
+.teacher p{
+    font-size: 25px;
+    padding-top: 10px;
+}
+.teacher .page1{
+     float: left;
+     margin: 50px;
+     padding-top: 150px;
+     margin-left: 10px;
+     background-color: green;
+     margin-top: 200px;
+}
+.teacher img{
+    margin-top: -250px;
+    padding: 25px;
+}
+.teacher .page2{
+     float: left;
+     margin: 50px;
+     padding-top: 150px;
+     margin-left: 30px;
+     background-color: purple;
+     margin-top: 200px;
+}
+.teacher .page3{
+     float: left;
+     margin: 50px;
+     padding-top: 150px;
+     margin-left: 30px;
+     background-color: yellow;
+     margin-top: 200px;
+}
+.teacher .page4{
+     float: left;
+     margin: 50px;
+     padding-top: 150px;
+     margin-left: 30px;
+     background-color: orangered;
+     margin-top: 200px;
+}
+.teacher .page5{
+     float: left;
+     margin: 50px;
+     padding-top: 150px;
+     margin-left: 40px;
+     background-color: blueviolet;
+     margin-top: 200px;
+}
+.teacher .page6{
+     float: left;
+     margin: 10px;
+     padding-top: 150px;
+     margin-left: 40px;
+     background-color: palevioletred;
+     margin-top: 200px;
+}
+.teacher .page7{
+     float: left;
+     margin: 10px;
+     padding-top: 150px;
+     margin-left: 40px;
+     background-color: blue;
+     margin-top: 200px;
+}
+.teacher .page8{
+     float: left;
+     margin: 10px;
+     padding-top: 150px;
+     margin-left: 40px;
+     background-color: palegreen;
+     margin-top: 200px;
+}
+.teacher h1{
+    font-size: 20px;
+}
+.teacher p{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.one button {
+margin-left: 10px;
+padding: 15px 40px;
+color: white;
+font-size: 15px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: orangered;
+border: none;
+border-radius: 25px;
+margin-left:550px;
+margin-top:100px;
+}
+
+.one button:hover {
+background-color: black;
+}
+.two{
+    height: 600px;
+    width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top:100px;
+}
+.two h3{
+    font-size: 40px;
+    padding-top: 70px;
+}
+.two p{
+    font-size: 25px;
+    padding-top: 20px;
+}
+.z{
+    display: flex;
+    margin-top:-350px;
+}
+.thre{
+ margin-left:20px;
+ border: 3px solid, rgb(221, 98, 139);
+ border-radius: 25px;
+ text-align: center;
+ width:450px;
+ height:330px;
+
+}
+.thre .go{
+  display: flex;
+  margin-top:20px;
+  margin-left:20px;
+
+}
+.thre .go1{
+    margin-top:20px;
+}
+.thre .go2{
+    margin-top:20px;
+}
+
+
+.thre1{
+ margin-left:20px;
+ border: 3px solid, rgb(147, 91, 202);
+ border-radius: 25px;
+ text-align: center;
+ width:450px;
+ height:330px;
+}
+.thre1 .go{
+  display: flex;
+  margin-top:20px;
+  margin-left:20px;
+
+}
+.thre1 .go1{
+    margin-top:20px;
+}
+.thre1 .go2{
+    margin-top:20px;
+}
+
+.thre2{
+ margin-left:20px;
+ border: 3px solid, rgb(255, 255, 0);
+ border-radius: 25px;
+ text-align: center;
+ width:450px;
+ height:330px;
+}
+.thre2 .go{
+  display: flex;
+  margin-top:20px;
+  margin-left:20px;
+
+}
+.thre2 .go1{
+    margin-top:20px;
+}
+.thre2 .go2{
+    margin-top:20px;
+}
+
+
+
+.lable{
+    height: 300px;
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+    margin-top:150px;
+}
+.lable h4{
+    padding-top: 70px;
+}
+.lable a{
+    text-decoration: none;
+}
+.footer{
+    height: 500px;
+    width: 100%;
+    background-color: navy;
+}
+
+
+
+.footer{
+height: 450px;
+width: 100%;
+display: flex;
+column-gap: 100px;
+color: white;
+font-size: 21px;
+padding-top: 50px;
+justify-content: center;
+background: linear-gradient(to right,rgb(93, 93, 243),rgb(27, 26, 26));
+}
+.footer li{
+list-style: none;
+margin-top: 20px;
+font-size: 20px;
+color: white;
+
+
+}
+.footer li a{
+text-decoration: none;
+color: white;
+
+
+}
+.footer1{
+width: 400px;
+}
+.footer1 .icons{
+display: flex;
+column-gap: 10px;
+margin-bottom: 50px;
+color: blue;
+
+}
+.copyright{
+height: 90px;
+width: 100%;
+font-size: 20px;
+text-align: center;
+align-content: center;
+color: white;
+background:linear-gradient(to left,rgb(93, 93, 243),rgb(27, 26, 26));
+}
+.copyright a{
+color: red;
+}
