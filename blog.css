@@ -1,0 +1,424 @@
+.container {
+    width: 100%;
+    height: auto;
+    background-color: rgb(243, 235, 235);
+    overflow: hidden; 
+    position: relative; 
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    z-index: 2; /* Ensure navbar is above curved background */
+}
+
+.curved-background {
+    position: absolute;
+    top: -50px; /* Adjust to position the curve */
+    left: 0;
+    width: 100%;
+    height: 200px; /* Adjust height of curved background */
+    background-color: #007bff; /* Background color */
+    clip-path: ellipse(100% 50% at 50% 0%); /* Create an ellipse shape */
+    z-index: 1; /* Behind the navbar */
+}
+
+.logo {
+    width: 200px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    line-height: 40px;
+    position: relative;
+    margin-left: 5px; /* Adjust spacing between menu items */
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 15px; /* Adjust padding to create clickable area */
+}
+
+.nav ul li a:hover {
+    color: orangered;
+}
+
+.nav ul li a .fas {
+    margin-left: 5px; /* Adjust spacing between text and icon */
+    transition: transform 0.3s ease; /* Smooth transition for icon rotation */
+}
+
+.nav ul li:hover > a .fas.fa-plus {
+    transform: rotate(45deg); /* Rotate plus icon to create minus effect */
+}
+
+.nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 5px 0;
+    width: auto;
+    min-width: 200px; /* Adjust minimum width of sub-menu */
+}
+
+.nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    padding: 5px 5px; /* Adjust padding inside sub-menu items */
+}
+
+ul .sub-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.sub-menu li a:hover {
+    color: orangered;
+}
+.nav button {
+margin-right: 10px;
+padding: 10px 20px;
+color: white;
+font-size: 18px;
+background-color: orangered;
+border: none;
+border-radius: 25px;
+}
+
+.nav button:hover {
+background-color: black;
+}
+.page{
+display: flex;
+text-align: left;
+column-gap: 50px;
+width: 500px;
+}
+.page h3{
+padding-left: 30px;
+}
+
+
+.About{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+
+}
+.About a{
+    text-decoration: none;
+    font-size: 20px;
+}
+        .buttons{
+            height: 100px;
+            width: 100%;
+    
+            display: flex;
+            align-items: center;
+        }
+        .buttons h1{
+            margin-left: 30px;
+            background:pink;
+            width: 250px;
+            height:40px;
+            text-align: center;
+            border-radius:25px;
+        }
+        
+        .buttons .but1 button{
+            width: 80px;
+            height:40px;
+            background:red;
+            border: none;  
+            border-radius: 25px;
+            color: white;
+            margin-left:550px;
+        }
+
+        .buttons .but1 button:hover{
+            background:black;
+        }
+
+        .buttons .but2 button{
+            width: 110px;
+            height:40px;
+            background:white;
+            border:1px solid, black;  
+            border-radius: 25px;
+            margin-left:10px;
+        }
+        .buttons .but3 button{
+            width: 110px;
+            height:40px;
+            background:white;
+            border:1px solid, black;   
+            border-radius: 25px;
+            margin-left:10px;
+        }
+        .buttons .but4 button{
+            width: 110px;
+            height:40px;
+            background:white;
+            border:1px solid, black;   
+            border-radius: 25px;
+            margin-left: 10px;
+        }
+        .images{
+           margin-top:50px;
+           display: flex;
+           justify-content: space-around;
+        }
+        .images .img1 img{
+            border-radius:25px;
+        }
+        .images .img1 h3{
+          margin-top:5px;
+          color: rgb(1, 207, 1);
+        }
+        .images .img1 h2{
+            margin-top:5px;
+        }
+        .images .img1 a{
+            margin-top:10px;
+            font-size:20px;
+             margin-left: 20px;
+        }
+
+        .images .img2 img{
+            border-radius:25px;
+        }
+        .images .img2 h3{
+          margin-top:5px;
+          color: rgb(1, 207, 1);
+        }
+        .images .img2 h2{
+            margin-top:5px;
+        }
+        .images .img2 a{
+            margin-top:10px;
+            font-size:20px;
+            margin-left: 20px;
+        }
+
+        .images .img3 img{
+            border-radius:25px;
+        }
+        .images .img3 h3{
+          margin-top:5px;
+          color: rgb(1, 207, 1);
+        }
+        .images .img3 h2{
+            margin-top:5px;
+        }
+        .images .img3 a{
+            margin-top:10px;
+            font-size:20px;
+            margin-left:20px;
+
+        }
+
+        .images1{
+           margin-top:50px;
+           display: flex;
+           justify-content: space-around;
+        }
+        .images1 .img1 img{
+            border-radius:25px;
+        }
+        .images1 .img1 h3{
+          margin-top:5px;
+          color: rgb(1, 207, 1);
+        }
+        .images1 .img1 h2{
+            margin-top:5px;
+        }
+        .images1 .img1 a{
+            margin-top:10px;
+            font-size:20px;
+            margin-left: 20px;
+
+        }
+
+        .images1 .img2 img{
+            border-radius:25px;
+        }
+        .images1 .img2 h3{
+          margin-top:5px;
+          color: rgb(1, 207, 1);
+        }
+        .images1 .img2 h2{
+            margin-top:5px;
+        }
+        .images1 .img2 a{
+            margin-top:10px;
+            font-size:20px;
+            margin-left:20px;
+
+        }
+
+        .images1 .img3 img{
+            border-radius:25px;
+        }
+        .images1 .img3 h3{
+          margin-top:5px;
+          color: rgb(1, 207, 1);
+        }
+        .images1 .img3 h2{
+            margin-top:5px;
+        }
+        .images1 .img3 a{
+            margin-top:10px;
+            font-size:20px;
+            margin-left:20px;
+
+        }
+
+        .images2{
+           margin-top:50px;
+           display: flex;
+           justify-content: space-around;
+        }
+        .images2 .img1 img{
+            border-radius:25px;
+        }
+        .images2 .img1 h3{
+          margin-top:5px;
+          color: rgb(1, 207, 1);
+        }
+        .images2 .img1 h2{
+            margin-top:5px;
+        }
+        .images2 .img1 a{
+            margin-top:10px;
+            font-size:20px;
+            margin-left: 20px;
+
+        }
+
+        .images2 .img2 img{
+            border-radius:25px;
+        }
+        .images2 .img2 h3{
+          margin-top:5px;
+          color: rgb(1, 207, 1);
+        }
+        .images2 .img2 h2{
+            margin-top:5px;
+        }
+        .images2 .img2 a{
+            margin-top:10px;
+            font-size:20px;
+            margin-left:20px;
+
+        }
+
+        .images2 .img3 img{
+            border-radius:25px;
+        }
+        .images2 .img3 h3{
+          margin-top:5px;
+          color: rgb(1, 207, 1);
+        }
+        .images2 .img3 h2{
+            margin-top:5px;
+        }
+        .images2 .img3 a{
+            margin-top:10px;
+            font-size:20px;
+            margin-left:20px;
+}
+.images a{
+    text-decoration: none;
+    color: red;
+}
+.images2 a{
+    text-decoration: none;
+    color: red;
+}
+.images1 a{
+    text-decoration: none;
+    color: red;
+}
+span{
+    margin-left: 20px;
+    color: red;
+
+    
+    
+}
+
+
+        .footer{
+            margin-top:100px;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    column-gap: 100px;
+    color: white;
+    font-size: 21px;
+    padding-top: 50px;
+    justify-content: center;
+    background: linear-gradient(to right,rgb(93, 93, 243),rgb(27, 26, 26));
+}
+.footer li{
+    list-style: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+
+    
+}
+.footer li a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+.footer1{
+    width: 400px;
+}
+.footer1 .icons{
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 50px;
+    color: blue;
+
+}
+.copyright{
+    height: 90px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    background:linear-gradient(to left,rgb(93, 93, 243),rgb(27, 26, 26));
+}
+.copyright a{
+    color: red;
+}
+  

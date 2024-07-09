@@ -262,7 +262,7 @@ a{
     width: 100%;
 
 }
-.offer2{
+ .offer2{
     height: 30px;
     width: 100%;
     display: flex;
@@ -345,6 +345,13 @@ a{
     height: 300px;
     width:100%;
     }
+    .off{
+        height: 30px;
+        width: 100%;
+        column-gap: 70px;
+        justify-content: center;
+        text-align: center;
+    }    
 
     .images{
         height: 600px;
@@ -352,7 +359,7 @@ a{
         margin:50px;
         display: flex;
         column-gap: 70px;
-        
+        margin-top: 150px;
     }
     .images .img1 button{
     background:rgb(245, 184, 79);
@@ -497,7 +504,7 @@ border-radius: 20px ;
 .parent{
     height: 550px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .parent1{
     height: 130px;
